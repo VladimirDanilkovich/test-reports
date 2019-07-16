@@ -31,6 +31,8 @@ const {Builder, By, until} = require('selenium-webdriver');
     {
       const elements = await driver.findElements(By.css(".toast-error"))
       assert(!elements.length)
+    }catch [system.exception]{
+  "caught a system exception"
     }
     } finally {
         await driver.quit();
