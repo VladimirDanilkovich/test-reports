@@ -31,10 +31,10 @@ const {Builder, By, until} = require('selenium-webdriver');
     {
       const elements = await driver.findElements(By.css(".toast-error"));
       assert(!elements.length);
+    }
     }catch(e){
      alert("fold");
-    }
-    } finally {
+    }finally {
         await driver.quit();
     }
 })();
