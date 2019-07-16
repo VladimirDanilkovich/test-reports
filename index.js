@@ -10,8 +10,8 @@ const {Builder, By, until} = require('selenium-webdriver');
     await driver.findElement(By.xpath("//div[2]/form-group/div/div/div/input")).sendKeys("Test")
     await driver.findElement(By.xpath("//select")).click()
     {
-     // const dropdown = await driver.findElement(By.id("Preferred response method"))
-      await dropdown.findElement(By.css("*[value='Phone']")).click()
+      const dropdown = await driver.findElement(By.id("Preferred response method"))
+      //await dropdown.findElement(By.css("*[value='Phone']")).click()
     }
     await driver.findElement(By.xpath("//group-input/input")).sendKeys("1234566755")
     await driver.findElement(By.xpath("//div[5]/div/form-group/div/div/div/select")).click()
