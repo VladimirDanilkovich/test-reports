@@ -209,7 +209,12 @@
     "type": "git",
     "url": "git://github.com/VladimirDanilkovich/selenium.git"
   },
-  
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chromedriver": "^2.41.0",
+    "mocha": "^5.2.0",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  },
     "scripts": {
   "test": "mocha index.js"
 
