@@ -1,19 +1,10 @@
 const { Builder, By, Key, until } = require('selenium-webdriver')
-const assert = require('assert')
 
+(async function example() {
+  const driver = await new Builder().forBrowser('chrome').build();
 
-describe('Test_1', function() {
-  this.timeout(30000)
-  let driver
-  let vars
-  beforeEach(async function() {
-    driver = await new Builder().forBrowser('firefox').build()
-    vars = {}
-  })
-  afterEach(async function() {
-    await driver.quit()
-  })
-  it('Test_1', async function() {
+  try {
+
     await driver.get("https://sciadev-scia.cs31.force.com/feedbackform")
     await driver.setRect(1440, 802)
     await driver.findElement(By.xpath("//div/input")).sendKeys("Selenium")
@@ -42,5 +33,8 @@ describe('Test_1', function() {
       const elements = await driver.findElements(By.css(".toast-error"))
       assert(!elements.length)
     }
-  })    
-})
+  } finally {
+    await driver.quit();
+  }
+})();
+
