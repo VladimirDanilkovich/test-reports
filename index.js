@@ -33,7 +33,7 @@ const {Builder, By, until} = require('selenium-webdriver');
       assert(!elements.length);
     }
     }catch(e){
-     alert("fold");
+     'should return -1 when the value is not present';
     }finally {
         await driver.quit();
     }
