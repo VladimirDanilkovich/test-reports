@@ -1,39 +1,11 @@
 var webdriver = require('selenium-webdriver');
+var chrome = require('selenium-webdriver/chrome');
+var co = new chrome.Options();
+co.setChromeBinaryPath("/Applications/UsrBin/Google\ Chrome.app/Contents/MacOS/Google\ Chrome");
 var driver = new webdriver.Builder()
-    .forBrowser('chrome')
+    .forBrowser("firefox")
+    .setChromeOptions(co)
     .build();
 
-
-   it('Test_1', function(done) {
-   driver.get("http://fanserials.tv/43981-amerikanskiy-papasha-15-sezon-14-seriya-hamerican-dad.html");
-  /*  await driver.setRect(1440, 802);
-    await driver.findElement(By.xpath("//div/input")).sendKeys("Selenium");
-    await driver.findElement(By.xpath("//div[2]/form-group/div/div/div/input")).sendKeys("Test");
-    await driver.findElement(By.xpath("//select")).click();
-    {
-      const dropdown = await driver.findElement(By.id("Preferred response method"));
-      await dropdown.findElement(By.css("*[value='Phone']")).click();
-    }
-    await driver.findElement(By.xpath("//group-input/input")).sendKeys("1234566755");
-    await driver.findElement(By.xpath("//div[5]/div/form-group/div/div/div/select")).click();
-    {
-      const dropdown = await driver.findElement(By.xpath("//div[5]/div/form-group/div/div/div/select"));
-      await dropdown.findElement(By.css("*:nth-child(2)")).click();
-    }
-    await driver.findElement(By.xpath("//div[2]/form-group/div/div/div/select")).click();
-    {
-      const dropdown = await driver.findElement(By.id("What does the feedback relate to? *"));
-      await dropdown.findElement(By.css("*[value='Accommodation']")).click();
-    }
-    await driver.findElement(By.xpath("//textarea")).click();
-    await driver.findElement(By.xpath("//textarea")).sendKeys("Test");
-    await driver.findElement(By.css(".donate-now")).click();
-    await driver.sleep(undefined);
-    {
-      const elements = await driver.findElements(By.css(".toast-error"))
-      assert(!elements.length);
-    }*/
-    driver.quit();
-   });
-
-
+console.log("hello");
+driver.quit();
