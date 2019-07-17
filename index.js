@@ -1,4 +1,5 @@
 // Tests in this suite will run
+var driver = require('selenium-webdriver');
 describe.only('#flattenArray()', function() {
    it('Test_1', async function() {
     await driver.get("https://sciadev-scia.cs31.force.com/feedbackform");
