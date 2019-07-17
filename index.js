@@ -3,7 +3,7 @@ var driver = new webdriver.Builder()
     .forBrowser('chrome')
     .build();
 describe.only('#flattenArray()', function() {
-    context('with string argument', function() {
+    
    it('Test_1', async function() {
     await driver.get("https://sciadev-scia.cs31.force.com/feedbackform");
      await driver.findElement(webdriver.By.xpath("//div/input")).sendKeys("Selenium");
@@ -30,5 +30,5 @@ describe.only('#flattenArray()', function() {
     await driver.sleep(undefined);
    
   });
-    })      
+     
 })
