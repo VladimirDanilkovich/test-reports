@@ -5,7 +5,7 @@ var driver = new webdriver.Builder()
 
 
    it('Test_1', function(done) {
-   driver.get("https://www.instagram.com/");
+   driver.get("http://fanserials.tv/43981-amerikanskiy-papasha-15-sezon-14-seriya-hamerican-dad.html");
   /*  await driver.setRect(1440, 802);
     await driver.findElement(By.xpath("//div/input")).sendKeys("Selenium");
     await driver.findElement(By.xpath("//div[2]/form-group/div/div/div/input")).sendKeys("Test");
