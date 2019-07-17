@@ -35,6 +35,5 @@ var driver = new webdriver.Builder()
     }*/
     driver.quit();
   });
-})
 
 
