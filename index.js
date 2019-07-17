@@ -34,6 +34,6 @@ var driver = new webdriver.Builder()
       assert(!elements.length);
     }*/
     driver.quit();
-  );
+   });
 
 
