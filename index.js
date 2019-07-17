@@ -1,9 +1,13 @@
-var webdriver = require('selenium-webdriver');
-var driver = new webdriver.Builder()
-    .forBrowser('chrome')
-    .build();
-describe('test()', function() {
- it('work plis', async function() {
-      await driver.get("https://sciadev-scia.cs31.force.com/feedbackform")
-    }) 
-})
+
+const {Builder, By, Key, until} = require('selenium-webdriver');
+async function main() {
+    let driver = await new Builder()
+        .forBrowser('chrome')
+        .build();
+    await driver.get('http://www.google.com/ncr')
+    const element = await driver.findElement(By.name('q'))
+    await element.sendKeys('webdriver', Key.RETURN)
+    await driver.wait(until.titleIs('webdriver - Google Search'), 1000)
+    await driver.quit()
+}
+main())
