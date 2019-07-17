@@ -1,7 +1,5 @@
 const {Builder, By, Key, until} = require('selenium-webdriver');
-
-describe('Test_1', function() {
-
+it('Test_1', function() {
 let driverPromise = new Builder()
     .forBrowser('chrome')
     .build();
