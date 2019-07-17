@@ -8,7 +8,7 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
-      - image: selenium/standalone-chrome:3.11.0
+      - image: selenium/standalone-chrome-debug:3.11.0
       
       # Specify service dependencies here if necessary  
       # CircleCI maintains a library of pre-built images
@@ -55,10 +55,7 @@ jobs:
       - run:
           name: install-npm
           command: npm install
-          
-       -run:
-          name: debug
-          command: debug;
+  
           
       # run tests!
       - run: 
