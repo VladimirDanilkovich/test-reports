@@ -1,4 +1,4 @@
-/ Tests in this suite will run
+// Tests in this suite will run
 describe.only('#flattenArray()', function() {
   it('should flatten array', function() {});
 })
