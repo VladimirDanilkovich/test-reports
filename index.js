@@ -10,4 +10,4 @@ driverPromise.then(driver => driver.get('http://www.google.com/ncr'))
     .then(element => element.sendKeys('webdriver', Key.RETURN))
     .then(() => driver.wait(until.titleIs('webdriver - Google Search'), 1000))
     .then(() => driver.quit())
-}
+})
