@@ -7,5 +7,5 @@ var driver = new webdriver.Builder()
     .setChromeOptions(co)
     .build();
 
-console.log("hello");
+driver.get("https://sites.google.com/a/chromium.org/chromedriver/downloads");
 driver.quit();
