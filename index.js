@@ -3,9 +3,9 @@ var driver = new webdriver.Builder()
     .forBrowser('chrome')
     .build();
 
-describe.only('#flattenArray()', function() {
-   it('Test_1', async function() {
-    await driver.get("https://www.instagram.com/");
+
+   it('Test_1', function(done) {
+   driver.get("https://www.instagram.com/");
   /*  await driver.setRect(1440, 802);
     await driver.findElement(By.xpath("//div/input")).sendKeys("Selenium");
     await driver.findElement(By.xpath("//div[2]/form-group/div/div/div/input")).sendKeys("Test");
@@ -33,7 +33,7 @@ describe.only('#flattenArray()', function() {
       const elements = await driver.findElements(By.css(".toast-error"))
       assert(!elements.length);
     }*/
-     await driver.quit();
+    driver.quit();
   });
 })
 
