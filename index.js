@@ -4,7 +4,7 @@ const assert = require('assert')
 
 describe('Test_1', function() {
 
-var driver = await new Builder().forBrowser('chrome').build()
+var driver = new selenium.Builder().forBrowser('chrome').build()
   
   it('Test_1', async function() {
     await driver.get("https://sciadev-scia.cs31.force.com/feedbackform")
