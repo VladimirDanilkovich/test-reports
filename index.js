@@ -3,16 +3,9 @@ const { Builder, By, Key, until } = require('selenium-webdriver')
 const assert = require('assert')
 
 describe('Test_1', function() {
+
+var driver = await new Builder().forBrowser('chrome').build()
   
-  let driver
-  let vars
-  beforeEach(async function() {
-    driver = await new Builder().forBrowser('chrome').build()
-    vars = {}
-  })
-  afterEach(async function() {
-    await driver.quit();
-  })
   it('Test_1', async function() {
     await driver.get("https://sciadev-scia.cs31.force.com/feedbackform")
     await driver.setRect(1440, 802)
