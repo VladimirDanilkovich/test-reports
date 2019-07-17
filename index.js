@@ -1,6 +1,6 @@
 const {Builder, By, Key, until} = require('selenium-webdriver');
 let driverPromise = new Builder()
-    .forBrowser('firefox')
+    .forBrowser('chrome')
     .build();
 driverPromise.then(driver => driver.get('http://www.google.com/ncr'))
     .then(() => driver.findElement(By.name('q')))
