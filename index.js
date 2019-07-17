@@ -1,43 +1,54 @@
-var crypto = require('crypto');
+var md5 = require('../md5');
+var expect = require('chai').expect;
 
-module.exports = function(string, callback) {
-  var withCallback = typeof callback === 'function';
-  
-  try {
-  
-     it('Test_1', async function() {
-    await driver.get("https://sciadev-scia.cs31.force.com/feedbackform")
-    await driver.setRect(1440, 802)
-    await driver.findElement(By.xpath("//div/input")).sendKeys("Selenium")
-    await driver.findElement(By.xpath("//div[2]/form-group/div/div/div/input")).sendKeys("Test")
-    await driver.findElement(By.xpath("//select")).click()
-    {
-      const dropdown = await driver.findElement(By.id("Preferred response method"))
-      await dropdown.findElement(By.css("*[value='Phone']")).click()
-    }
-    await driver.findElement(By.xpath("//group-input/input")).sendKeys("1234566755")
-    await driver.findElement(By.xpath("//div[5]/div/form-group/div/div/div/select")).click()
-    {
-      const dropdown = await driver.findElement(By.xpath("//div[5]/div/form-group/div/div/div/select"))
-      await dropdown.findElement(By.css("*:nth-child(2)")).click()
-    }
-    await driver.findElement(By.xpath("//div[2]/form-group/div/div/div/select")).click()
-    {
-      const dropdown = await driver.findElement(By.id("What does the feedback relate to? *"))
-      await dropdown.findElement(By.css("*[value='Accommodation']")).click()
-    }
-    await driver.findElement(By.xpath("//textarea")).click()
-    await driver.findElement(By.xpath("//textarea")).sendKeys("Test")
-    await driver.findElement(By.css(".donate-now")).click()
-    await driver.sleep(undefined)
-    {
-      const elements = await driver.findElements(By.css(".toast-error"))
-      assert(!elements.length)
-    }
-  })
+describe('#md5()', function() {
+
+  context('with string argument', function() {
+    it('should compute MD5 hash', function(done) {
     
-  } catch (e) {
-    if (withCallback) callback(e);
-    else throw e;
-  }
-}
+      md5('Glad Chinda', function(err, hash) {
+        // call the done() callback with the error if any
+        // to terminate the test with an error
+        if (err) return done(err);
+        
+        // add some assertions
+        expect(hash)
+          .to.be.a('string')
+          .that.matches(/^[a-f0-9]{32}$/)
+          .and.equal('877dbb93f50eb8a89012e15bd37ee7e4');
+          
+        // finally call the done() callback
+        // to terminate the test
+        done();
+      })
+      
+    })
+  })
+  
+  context('with non-string argument', function() {
+    it('should throw an error', function(done) {
+    
+      md5(12345, function(err, hash) {
+        // call the done() callback with the error if any
+        // to terminate the test
+        if (err) {
+        
+          // add an assertion to check the error
+          expect(function() { throw err })
+            .to.throw(TypeError, 'Data must be a string or a buffer');
+            
+          // finally call the done() callback
+          // to terminate the test and return
+          return done();
+          
+        }
+        
+        // call the done() callback
+        // to terminate the test
+        done();
+      })
+      
+    })
+  })
+  
+})
