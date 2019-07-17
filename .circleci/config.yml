@@ -48,11 +48,14 @@ jobs:
       - run:
           name: install-mocha
           command:  sudo npm install -g mocha
+      - run:
+          name: install-web
+          command: npm install selenium-webdriver
       
       - run:
           name: install-npm
           command: npm install
-        
+       
         
       # run tests!
       - run: 
