@@ -10,4 +10,4 @@ async function main() {
     await driver.wait(until.titleIs('webdriver - Google Search'), 1000)
     await driver.quit()
 }
-main())
+main()
