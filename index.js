@@ -4,7 +4,7 @@ const assert = require('assert')
   
   it('Test_1', async function() {
        
-       var driver = new Builder()
+       var driverPromise = new Builder()
      .forBrowser('chrome')
      .build();
     driverPromise.then(driver => driver.get('http://www.google.com/ncr'))
