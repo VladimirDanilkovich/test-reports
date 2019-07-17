@@ -4,10 +4,7 @@
 #
 version: 2
 jobs:
-  build:
-   machine:
-      node:
-        version: 8.2.0
+  
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
