@@ -55,8 +55,11 @@ jobs:
       - run:
           name: install-npm
           command: npm install
-       
-        
+          
+       -run:
+          name: debug
+          command: debug;
+          
       # run tests!
       - run: 
           name: run tests
