@@ -48,6 +48,15 @@ jobs:
       - run:
           name: install-mocha
           command: sudo npm install -g mocha
+      - run:
+          name: install-mocha
+          command:  sudo npm install -global sfdx-cli
+      - run:
+          name: install-mocha
+          command: sudo npm install -g json
+      - run:
+          name: install-mocha
+          command: sudo npm install -g slack-cli
           
       - run:
           name: install-web
