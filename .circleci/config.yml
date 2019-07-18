@@ -62,4 +62,4 @@ jobs:
       # run tests!
       - run: 
           name: run tests
-          command: start test.sh
+          command: npm install test.sh
