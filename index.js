@@ -6,13 +6,12 @@
     // setup
     
 
-  describe('Test_1', function() {
-  this.timeout(30000)
+
   var driver
   var vars
-  beforeEach(async function() {
-    driver = await new Builder().usingServer('http://localhost:4444/wd/hub').forBrowser('chrome').build()
-  })
+
+  driver = await new Builder().usingServer('http://localhost:4444/wd/hub').forBrowser('chrome').build()
+
   it('Test_1', async function() {
     await driver.get("https://sciadev-scia.cs31.force.com/feedbackform")
     await driver.findElement(By.xpath("//div/input")).sendKeys("Selenium")
@@ -42,7 +41,7 @@
       assert(!elements.length)
     }
   })
-})
+
 
 
 
