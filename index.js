@@ -1,7 +1,7 @@
     const { Builder, By, Key, until } = require('selenium-webdriver')
-    require('selenium-webdriver/chrome')
+   /* require('selenium-webdriver/chrome')
     require('chromedriver')
-    global.driver = {}
+    global.driver = {}*/
     const assert = require('assert')
 
     // setup
