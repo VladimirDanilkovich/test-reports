@@ -49,15 +49,8 @@ jobs:
           name: install-mocha
           command: sudo npm install -g mocha
       - run:
-          name: install-mocha
-          command:  sudo npm install -global sfdx-cli
-      - run:
-          name: install-mocha
-          command: sudo npm install -g json
-      - run:
-          name: install-mocha
-          command: sudo npm install -g slack-cli
-          
+          name: dev-hub
+          command: . setup-dev-hub.sh
       - run:
           name: install-web
           command: npm install selenium-webdriver
