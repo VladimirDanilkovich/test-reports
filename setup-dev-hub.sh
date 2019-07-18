@@ -6,6 +6,11 @@
 ## Authenticate to salesforce
 #echo "Authenticating..."
 #sfdx force:auth:jwt:grant --clientid ${SFDC_PROD_CLIENTID} --jwtkeyfile keys/server.key --username ${SFDC_PROD_USER} --setdefaultdevhubusername -a DevHub
+sudo npm install -global sfdx-cli
+
+sudo npm install -g json
+
+sudo npm install -g slack-cli
 
 FILE_NAME="sfdx-auth-url.txt"
 # Creation of a temp file that contains Sfdx Auth Url
