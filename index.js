@@ -1,4 +1,4 @@
-    const { Builder, By, Key, until } = require('selenium-webdriver')
+    const { Builder,setRect, By, Key, until } = require('selenium-webdriver')
     require('selenium-webdriver/chrome')
     require('chromedriver')
     global.driver = {}
