@@ -57,7 +57,7 @@ jobs:
           name: uninstall-driver
           command: npm uninstall -g chromedriver
           
-       - run:
+      - run:
           name: install-driver
           command: npm install -g chromedriver    
      
