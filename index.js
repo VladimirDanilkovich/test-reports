@@ -11,7 +11,7 @@
   var vars
 
 
-  it('Test_1', async function() {
+  main(async function() {
       
   driver = await new Builder().usingServer('http://localhost:4444/wd/hub').forBrowser('chrome').build()
     await driver.get("https://sciadev-scia.cs31.force.com/feedbackform")
@@ -42,6 +42,7 @@
       assert(!elements.length)
     }
   })
+main()
 
 
 
