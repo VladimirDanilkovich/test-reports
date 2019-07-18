@@ -3,8 +3,8 @@
 
     describe('Test_1', function() {
   this.timeout(30000)
-   var driver
-  var vars
+   let driver
+  let vars
   beforeEach(async function() {
     driver = await new Builder().usingServer('http://localhost:4444/wd/hub').forBrowser('chrome').build()
     vars = {}
@@ -15,7 +15,7 @@
     it('Test_1', async function() {
     await driver.get("https://sciadev-scia.cs31.force.com/feedbackform")
     await driver.findElement(By.xpath("//div/input")).sendKeys("Selenium")
-   // await driver.findElement(By.xpath("//div[2]/form-group/div/div/div/input")).sendKeys("Test")
+    await driver.findElement(By.xpath("//div[2]/form-group/div/div/div/input")).sendKeys("Test")
     await driver.findElement(By.xpath("//select")).click()
     {
       const dropdown = await driver.findElement(By.id("Preferred response method"))
