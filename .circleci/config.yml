@@ -55,7 +55,7 @@ jobs:
           
        - run:
           name: sed
-          command: sed 's/chrome/firefox/g' index.js    
+          command: sed 's/firefox/chrome/g' index.js    
          
       - run:
           name: install-npm
