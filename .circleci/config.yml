@@ -52,6 +52,14 @@ jobs:
       - run:
           name: install-web
           command: npm install selenium-webdriver
+          
+      - run:
+          name: uninstall-driver
+          command: npm uninstall -g chromedriver
+          
+       - run:
+          name: install-driver
+          command: npm install -g chromedriver    
      
       - run:
           name: install-npm
