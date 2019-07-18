@@ -4,18 +4,15 @@
     global.driver = {}
     
     // setup
-    beforeEach(async function () {
-      this.timeout(60000)
+    
+
+      it('Test_1', async function() {
       try {
        var driver = await new Builder().forBrowser('chrome').build()
         await driver.manage().window().setSize(1600, 900)
       } catch (ex) {
         console.log(ex.stack)
       }
-    
-    })
-
-      it('Test_1', async function() {
     await driver.get("https://sciadev-scia.cs31.force.com/feedbackform")
     await driver.setRect(1440, 802)
     await driver.findElement(By.xpath("//div/input")).sendKeys("Selenium")
@@ -48,7 +45,3 @@
 
 
 
-    afterEach(async function () {
-      this.timeout(60000)
-      await driver.quit()
-    })
