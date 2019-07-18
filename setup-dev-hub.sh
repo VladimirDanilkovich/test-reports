@@ -9,7 +9,7 @@
 if [ "${SFDX_AUTH_URL}" != "" ]
 then
 #sudo npm install -global sfdx-cli
-#sudo npm install -g json
+sudo npm install -g json
 #sudo npm install -g slack-cli
 FILE_NAME="sfdx-auth-url.txt"
 # Creation of a temp file that contains Sfdx Auth Url
