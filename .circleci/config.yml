@@ -55,7 +55,7 @@ jobs:
           
       - run:
           name: sed
-          command: sed 's#Builder().forBrowser('"'"'firefox'"'"')#Builder().usingServer('"'"'http://localhost:4444/wd/hub'"'"').forBrowser('"'"'chrome'"'"')#g' index.js > index-updated.js   
+          command: sed 's#Builder().forBrowser('"'"'firefox'"'"')#Builder().usingServer('"'"'http://localhost:4444/wd/hub'"'"').forBrowser('"'"'chrome'"'"')#g' test.js > index-updated.js   
          
       - run:
           name: install-npm
