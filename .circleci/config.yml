@@ -52,6 +52,10 @@ jobs:
       - run:
           name: install-web
           command: npm install selenium-webdriver
+          
+       - run:
+          name: sed
+          command:sed 's/chrome/firefox/g' index.js    
          
       - run:
           name: install-npm
