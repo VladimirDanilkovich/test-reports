@@ -48,10 +48,12 @@ jobs:
       - run:
           name: install-mocha
           command:  sudo npm install -g mocha
+          
       - run:
           name: install-web
           command: npm install selenium-webdriver
-      - run:
+          
+      - run: 
           name: install-chrome
           command:apt-get install chromium-browser
       
