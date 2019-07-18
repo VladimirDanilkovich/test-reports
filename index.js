@@ -44,9 +44,7 @@
     }
   })
 })
-afterEach(async function() {
-  await driver.quit();
-})
+
 
 
 
