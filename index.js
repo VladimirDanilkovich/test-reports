@@ -11,7 +11,7 @@
   var vars
 
 
-  main(async function() {
+  async function main() {
       
   driver = await new Builder().usingServer('http://localhost:4444/wd/hub').forBrowser('chrome').build()
     await driver.get("https://sciadev-scia.cs31.force.com/feedbackform")
@@ -41,7 +41,7 @@
       const elements = await driver.findElements(By.css(".toast-error"))
       assert(!elements.length)
     }
-  })
+  }
 main()
 
 
