@@ -11,7 +11,7 @@
         var driver = await new Builder().forBrowser('chrome').build()
         await driver.get("https://sciadev-scia.cs31.force.com/feedbackform")
         await driver.setRect(1440, 802)
-        await driver.findElement(By.xpath("//div/input")).sendKeys("Selenium")
+       // await driver.findElement(By.xpath("//div/input")).sendKeys("Selenium")
         await driver.findElement(By.xpath("//div[2]/form-group/div/div/div/input")).sendKeys("Test")
         await driver.findElement(By.xpath("//select")).click()
         {
