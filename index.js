@@ -1,4 +1,4 @@
-    const webdriver = require('selenium-webdriver')
+    const { Builder, By, Key, until } = require('selenium-webdriver')
     require('selenium-webdriver/chrome')
     require('chromedriver')
     global.driver = {}
@@ -7,7 +7,7 @@
     beforeEach(async function () {
       this.timeout(60000)
       try {
-        driver = await new webdriver.Builder().forBrowser('chrome').build()
+       var driver = await new Builder().forBrowser('chrome').build()
         await driver.manage().window().setSize(1600, 900)
       } catch (ex) {
         console.log(ex.stack)
