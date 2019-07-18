@@ -53,11 +53,6 @@ jobs:
           name: install-web
           command: npm install selenium-webdriver
          
-          
-      - run:
-          name: install-driver
-          command: npm install -g chromedriver    
-     
       - run:
           name: install-npm
           command: npm install
