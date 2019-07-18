@@ -55,7 +55,7 @@ jobs:
           
       - run: 
           name: install-chrome
-          command: apt-get install chromium-browser
+          command: npm install chromium-browser
       
       - run:
           name: install-npm
