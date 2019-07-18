@@ -6,6 +6,9 @@
 ## Authenticate to salesforce
 #echo "Authenticating..."
 #sfdx force:auth:jwt:grant --clientid ${SFDC_PROD_CLIENTID} --jwtkeyfile keys/server.key --username ${SFDC_PROD_USER} --setdefaultdevhubusername -a DevHub
+
+if [ "${SFDX_AUTH_URL}" != "" ]
+then
 sudo npm install -global sfdx-cli
 
 sudo npm install -g json
@@ -20,3 +23,6 @@ echo "Authenticating..."
 sfdx force:auth:sfdxurl:store -f ${FILE_NAME} -d -a DevHub
 # Removing the file
 rm ${FILE_NAME}
+else
+    echo "It s punlic test"
+fi
