@@ -11,7 +11,7 @@
   var driver
   var vars
   beforeEach(async function() {
-    driver = await new Builder().forBrowser('chrome').build()
+    driver = await new Builder().usingServer('http://localhost:4444/wd/hub').forBrowser('chrome').build()
   })
   it('Test_1', async function() {
     await driver.get("http://sciadev-scia.cs31.force.com/feedbackform")
