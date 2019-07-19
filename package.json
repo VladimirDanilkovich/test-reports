@@ -57,7 +57,7 @@
     "merge": "^1.2.0",
     "phantomjs-prebuilt": "^2.1.12",
     "require-dir": "^0.3.2",
-    "selenium-webdriver": "^4.0.0-alpha.1"
+    "selenium-webdriver": "4.0.0-alpha.1"
   },
   "deprecated": false,
   "description": "JavaScript browser automation framework using official selenium-webdriver and cucumber-js",
