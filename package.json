@@ -1,6 +1,6 @@
 {
   "_from": "selenium-cucumber-js",
-  "_id": "selenium-cucumber-js@1.6.1",
+  "_id": "selenium-cucumber-js@1.6.2",
   "_inBundle": false,
   "_integrity": "sha512-WUwBWgj1rDM8BmCVgAdipAUN8YzkY4LxCy4QezfCCTP4iSR88M95mH8ak3hjZkIiyFDJYQ+3I0nRn/dNUkmuXg==",
   "_location": "/selenium-cucumber-js",
@@ -26,7 +26,7 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/selenium-cucumber-js/-/selenium-cucumber-js-1.6.1.tgz",
+  "_resolved": "https://registry.npmjs.org/selenium-cucumber-js/-/selenium-cucumber-js-1.6.2.tgz",
   "_shasum": "d007f89a1a9de691f02627b7960bf19127cd2b0f",
   "_spec": "selenium-cucumber-js",
   "_where": "E:\\!projects\\gitHub\\node-js-example_2",
@@ -219,21 +219,21 @@
     "test": "mocha index-updated.js --timeout 1200000"
 
   },
-  "version": "1.6.1",
+  "version": "1.6.2",
   "warnings": [
     {
       "code": "ENOTSUP",
       "required": {
         "node": "8.9.0"
       },
-      "pkgid": "selenium-cucumber-js@1.6.1"
+      "pkgid": "selenium-cucumber-js@1.6.2"
     },
     {
       "code": "ENOTSUP",
       "required": {
         "node": "8.9.0"
       },
-      "pkgid": "selenium-cucumber-js@1.6.1"
+      "pkgid": "selenium-cucumber-js@1.6.2"
     }
   ]
 }
