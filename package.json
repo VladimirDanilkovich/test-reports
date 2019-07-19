@@ -224,7 +224,7 @@
     {
       "code": "ENOTSUP",
       "required": {
-        "node": "6.11.0"
+        "node": "^6.11.0"
       },
       "pkgid": "selenium-cucumber-js@1.5.12"
     }
