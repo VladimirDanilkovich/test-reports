@@ -8,6 +8,9 @@
 #sfdx force:auth:jwt:grant --clientid ${SFDC_PROD_CLIENTID} --jwtkeyfile keys/server.key --username ${SFDC_PROD_USER} --setdefaultdevhubusername -a DevHub
 if [ "${SFDX_AUTH_URL}" != "" ]
 then
+sudo  npm install time   -g --unsafe-perm 
+npm  -g install express 
+npm -g install express-generator
 sudo  npm install sfdx-cli@6 --global
 sudo npm install -g json
 sudo npm install -g slack-cli
