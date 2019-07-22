@@ -218,22 +218,5 @@
     "scripts": {
   "test": "mocha index-updated.js --timeout 1200000"
 
-  },
-  "version": "1.5.12",
-  "warnings": [
-    {
-      "code": "ENOTSUP",
-      "required": {
-        "node": "6.11.0"
-      },
-      "pkgid": "selenium-cucumber-js@1.5.12"
-    },
-    {
-      "code": "ENOTSUP",
-      "required": {
-        "node": "6.11.0"
-      },
-      "pkgid": "selenium-cucumber-js@1.5.12"
-    }
-  ]
+  }
 }
