@@ -8,7 +8,7 @@
 #sfdx force:auth:jwt:grant --clientid ${SFDC_PROD_CLIENTID} --jwtkeyfile keys/server.key --username ${SFDC_PROD_USER} --setdefaultdevhubusername -a DevHub
 if [ "${SFDX_AUTH_URL}" != "" ]
 then
-sudo chown -R $USER </usr/local/lib/node_modules/slack-cli/node_modules/utf-8-validate/.node-gyp/8.0.0>
+sudo chown -R $USER "/usr/local/lib/node_modules/slack-cli/node_modules/utf-8-validate/.node-gyp/8.0.0"
 sudo npm install sfdx-cli 
 sudo npm install -g json
 sudo npm install -g slack-cli
