@@ -25,7 +25,7 @@
   "_requiredBy": [
     "#USER",
     "/"
-  ],
+  ],/*
   "_resolved": "https://registry.npmjs.org/selenium-cucumber-js/-/selenium-cucumber-js-1.6.0.tgz",
   "_shasum": "d007f89a1a9de691f02627b7960bf19127cd2b0f",
   "_spec": "selenium-cucumber-js",
@@ -37,7 +37,7 @@
   },
   "bugs": {
     "url": "https://github.com/john-doherty/selenium-cucumber-js/issues"
-  },
+  },*/
   "bundleDependencies": false,
   "dependencies": {
     "chai": "^4.1.2",
@@ -57,7 +57,7 @@
     "merge": "1.2.0",
     "phantomjs-prebuilt": "2.1.12",
     "require-dir": "0.3.2",
-    "selenium-webdriver": "3.0.0"
+    "selenium-webdriver": "^4.0.0-alpha.1"
   },
   "deprecated": false,
   "description": "JavaScript browser automation framework using official selenium-webdriver and cucumber-js",
@@ -203,7 +203,7 @@
     "bdd"
   ],
   "license": "ISC",
-  "main": "index.js",
+  "main": "test.js",
   "name": "selenium-cucumber-js",
   "repository": {
     "type": "git",
@@ -213,7 +213,7 @@
     "chai": "^4.1.2",
     "chromedriver": "2.41.0",
     "mocha": "^5.2.0",
-    "selenium-webdriver": "3.0.0"
+    "selenium-webdriver": "^4.0.0-alpha.1"
   },
     "scripts": {
   "test": "mocha index-updated.js --timeout 1200000"
