@@ -11,7 +11,7 @@ then
 npm  -g install express 
 npm  -g install express-generator
 sudo  npm install time   -g --unsafe-perm 
-sudo  npm install -g sfdx-cli
+sudo  npm install sfdx-cli@6 --global
 sudo npm install -g json
 sudo npm install -g slack-cli
 FILE_NAME="sfdx-auth-url.txt"
