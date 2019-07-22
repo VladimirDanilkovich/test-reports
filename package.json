@@ -25,7 +25,7 @@
   "_requiredBy": [
     "#USER",
     "/"
-  ],/*
+  ],
   "_resolved": "https://registry.npmjs.org/selenium-cucumber-js/-/selenium-cucumber-js-1.6.0.tgz",
   "_shasum": "d007f89a1a9de691f02627b7960bf19127cd2b0f",
   "_spec": "selenium-cucumber-js",
@@ -37,7 +37,7 @@
   },
   "bugs": {
     "url": "https://github.com/john-doherty/selenium-cucumber-js/issues"
-  },*/
+  },
   "bundleDependencies": false,
   "dependencies": {
     "chai": "^4.1.2",
