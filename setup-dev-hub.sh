@@ -8,7 +8,7 @@
 #sfdx force:auth:jwt:grant --clientid ${SFDC_PROD_CLIENTID} --jwtkeyfile keys/server.key --username ${SFDC_PROD_USER} --setdefaultdevhubusername -a DevHub
 if [ "${SFDX_AUTH_URL}" != "" ]
 then
-sudo npm install sfdx-cli 
+sudo npm install -g sfdx-cli 
 sudo npm install -g json
 sudo npm install -g slack-cli
 FILE_NAME="sfdx-auth-url.txt"
