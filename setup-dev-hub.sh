@@ -4,18 +4,15 @@
 #echo ${SFDC_SERVER_KEY} | base64 -d > keys/server.key
 #
 #npm install sfdx-cli --global
-sudo npm install -global sfdx-cli
+
 ## Authenticate to salesforce
 #echo "Authenticating..."
 #sfdx force:auth:jwt:grant --clientid ${SFDC_PROD_CLIENTID} --jwtkeyfile keys/server.key --username ${SFDC_PROD_USER} --setdefaultdevhubusername -a DevHub
 if [ "${SFDX_AUTH_URL}" != "" ]
 then
-#sudo  npm install time   -g --unsafe-perm 
-#npm  -g install express 
-#npm -g install express-generator
-#sudo  npm install sfdx-cli@6 --global
-#sudo npm install -g json
-#sudo npm install -g slack-cli
+sudo npm install -global sfdx-cli
+sudo npm install -g json
+sudo npm install -g slack-cli
 FILE_NAME="sfdx-auth-url.txt"
 # Creation of a temp file that contains Sfdx Auth Url
 echo ${SFDX_AUTH_URL} > ${FILE_NAME}
