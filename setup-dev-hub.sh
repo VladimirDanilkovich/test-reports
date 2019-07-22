@@ -8,6 +8,9 @@
 #sfdx force:auth:jwt:grant --clientid ${SFDC_PROD_CLIENTID} --jwtkeyfile keys/server.key --username ${SFDC_PROD_USER} --setdefaultdevhubusername -a DevHub
 if [ "${SFDX_AUTH_URL}" != "" ]
 then
+sudo chown -R $USER ~/.npm
+sudo chown -R $USER /usr/lib/node_modules
+sudo chown -R $USER /usr/local/lib/node_modules
 npm  -g install express 
 npm  -g install express-generator
 sudo  npm install time   -g --unsafe-perm 
