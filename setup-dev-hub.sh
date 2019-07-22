@@ -10,6 +10,8 @@ if [ "${SFDX_AUTH_URL}" != "" ]
 then
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
+export PATH=~/.npm-global/bin:$PATH
+source ~/.profile
 npm  -g install express 
 npm  -g install express-generator
 sudo  npm install time   -g --unsafe-perm 
