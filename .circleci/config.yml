@@ -27,6 +27,10 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
      
+      - run:
+          name: dev-hub
+          command: . setup-dev-hub.sh
+     
       - run: yarn install
 
       - save_cache:
@@ -38,10 +42,6 @@ jobs:
       - run:
           name: create docker network
           command: docker network create grid
-     
-      - run:
-          name: dev-hub
-          command: . setup-dev-hub.sh
      
       - run:
           name: install selenium-hub
