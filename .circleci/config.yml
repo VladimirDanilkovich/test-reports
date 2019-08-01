@@ -4,13 +4,13 @@
 #
 version: 2
   nightly:
-      triggers:
-        - schedule:
-            cron: "17 11 * * *"
-            filters:
-              branches:
-                only:
-                  - master
+    triggers:
+      - schedule:
+          cron: "21 11 * * *"
+          filters:
+            branches:
+              only:
+                - master               
 jobs:
   build:
     docker:
