@@ -65,15 +65,3 @@ jobs:
           name: run tests
           command: . test.sh
           
-workflows:
-  version: 2
-  autopublish:
-    triggers:
-      - schedule:
-          cron: "43 9 * * *"
-          filters:
-            branches:
-              only:
-                - master
-    jobs:
-      - build
