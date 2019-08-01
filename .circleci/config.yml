@@ -4,8 +4,8 @@
 #
 version: 2
   jobs:
-      build:
-          docker:
+    build:
+      docker:
             # specify the version you desire here
             - image: circleci/node:latest
             - image: selenium/standalone-chrome:3.11.0
