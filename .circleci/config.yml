@@ -3,18 +3,18 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 version: 2
- commit:
-    jobs:
-      - test
-      - deploy
-  nightly:
-    triggers:
-      - schedule:
-          cron: "23 11 * * *"
-          filters:
-            branches:
-              only:
-                - master         
+commit:
+   jobs:
+     - test
+     - deploy
+ nightly:
+   triggers:
+     - schedule:
+         cron: "25 11 * * *"
+         filters:
+           branches:
+             only:
+               - master         
 jobs:
   build:
     docker:
