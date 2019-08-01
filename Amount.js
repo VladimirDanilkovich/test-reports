@@ -15,11 +15,6 @@ describe('0 Amount', function() {
   })
   it('0 Amount', async function() {
     await driver.get("https://beyondblue--dev.lightning.force.com/lightning/r/Contact/0030l00000UedkOAAR/view?0.source=alohaHeader")
-    await driver.setRect(1440, 900)
-    {
-      const element = await driver.findElement(By.css(".menuTriggerLink"))
-      await driver.actions({ bridge: true }).moveToElement(element).perform()
-    }
     await driver.findElement(By.css(".slds-button:nth-child(1) > .forceActionLink > .slds-truncate")).click()
     await driver.findElement(By.xpath("//lightning-input/div/input")).sendKeys("0")
     await driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/input")).click()
