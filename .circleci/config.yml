@@ -70,7 +70,7 @@ workflows:
   autopublish:
     triggers:
       - schedule:
-          cron: "01 * * * *"
+          cron: "43 9 * * *"
           filters:
             branches:
               only:
