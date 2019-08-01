@@ -13,6 +13,7 @@ workflows:
                only:
                  - master         
    jobs:
+      -test-reports
      build:
        docker:
          # specify the version you desire here
