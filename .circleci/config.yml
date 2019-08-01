@@ -75,3 +75,16 @@ jobs:
       - run: 
           name: run tests
           command: . test.sh
+          
+workflows:
+  version: 2
+  autopublish:
+    triggers:
+      - schedule:
+          cron: "27 12 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build
