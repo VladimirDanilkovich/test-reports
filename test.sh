@@ -1,5 +1,4 @@
-
-yum install mailutils
+install mailutils
 
 for i in *.js;
 do
