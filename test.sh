@@ -1,4 +1,4 @@
-install mailutils
+apt-get install mailutils
 
 for i in *.js;
 do
