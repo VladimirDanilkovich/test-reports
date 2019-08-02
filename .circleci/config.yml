@@ -64,16 +64,8 @@ jobs:
       - run: 
           name: run tests
           command: . TestCycle.sh
-          
-workflows:
-  version: 2
-  autopublish:
-    triggers:
-      - schedule:
-          cron: "56 9 * * *"
-          filters:
-            branches:
-              only:
-                - master
-    jobs:
-      - build
+         
+      - run:
+          name: second test
+          command: mocha test.js
+          when:on_fail 
