@@ -36,7 +36,7 @@ describe('Test_1', function() {
     await driver.findElement(By.css(".donate-now")).click()
     await driver.sleep(undefined)
     {
-      const elements = await driver.findElements(By.css(".toast-error"))
+      const elements = wait driver.findElements(By.css(".toast-error"))
       assert(!elements.length)
     }
   })
