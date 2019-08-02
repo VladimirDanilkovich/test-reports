@@ -7,7 +7,7 @@ describe('Test_1', function() {
   let drive
   let vars
   beforeEach(async function() {
-    driver = await new Builder().forBrowser('firefox').build()
+    drive = await new Builder().forBrowser('firefox').build()
     vars = {}
   })
   afterEach(async function() {
