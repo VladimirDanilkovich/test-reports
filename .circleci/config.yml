@@ -62,12 +62,19 @@ jobs:
       - run: 
           name: run tests
           command: . TestCycle.sh
+
 workflows:
   version: 2
-  jobs:
+  commit:
+    jobs:
       - bilder
   nightly:
     triggers:
+      - schedule:
           cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - master
     jobs:
       - bilder
