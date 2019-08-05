@@ -18,7 +18,7 @@ describe('Test_1', function() {
     await driver.findElement(By.xpath("//select")).click()
     {
       const dropdown = await driver.findElement(By.id("Preferred response method"))
-      await dropdown.finElement(By.css("*[value='Phone']")).click()
+      await dropdown.findElement(By.css("*[value='Phone']")).click()
     }
     await driver.findElement(By.xpath("//group-input/input")).sendKeys("1234566755")
     await driver.findElement(By.xpath("//div[5]/div/form-group/div/div/div/select")).click()
