@@ -67,3 +67,9 @@ workflows:
   commit:
     jobs:
       - bilder
+  nightly:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+    jobs:
+      - bilder
