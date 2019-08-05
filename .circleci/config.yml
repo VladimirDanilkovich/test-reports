@@ -64,12 +64,10 @@ jobs:
           command: . TestCycle.sh
 workflows:
   version: 2
-  commit:
     jobs:
       - bilder
   nightly:
     triggers:
-      - schedule:
           cron: "0 0 * * *"
     jobs:
       - bilder
