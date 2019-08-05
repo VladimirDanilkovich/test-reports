@@ -5,4 +5,4 @@ do
    mocha index-updated.js || k + 1  
    echo "${CIRCLE_NODE_INDEX}" 
 done
-   echo"${k}"
+   echo"$k"
