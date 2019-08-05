@@ -58,9 +58,7 @@ jobs:
       - run:
           name: install-npm
           command: npm install
-  
           
-     
       - run: 
           name: run tests
           command: . TestCycle.sh
