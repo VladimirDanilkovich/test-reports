@@ -4,7 +4,7 @@
 #
 version: 2
 jobs:
-  selenium:
+  bs:
     docker:
       # specify the version you desire here
       - image: circleci/node:latest
