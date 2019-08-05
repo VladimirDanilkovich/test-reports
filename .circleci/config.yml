@@ -66,7 +66,7 @@ jobs:
           command: mocha test.js
          
   Amount:
-        docker:
+     docker:
         # specify the version you desire here
         - image: circleci/node:latest
         - image: selenium/standalone-chrome:3.11.0
@@ -75,8 +75,6 @@ jobs:
         # CircleCI maintains a library of pre-built images
         # documented at https://circleci.com/docs/2.0/circleci-images/
         # - image: circleci/mongo:3.4.4
-      working_directory: ~/repo
-
       steps:
         - checkout    
         - setup_remote_docker
