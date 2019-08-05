@@ -66,4 +66,4 @@ workflows:
   version: 2
   commit:
     jobs:
-      - builder
+      - bilder
