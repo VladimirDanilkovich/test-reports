@@ -4,7 +4,7 @@
 #
 version: 2
 jobs:
-  bs:
+  bilder:
     docker:
       # specify the version you desire here
       - image: circleci/node:latest
@@ -62,3 +62,8 @@ jobs:
       - run: 
           name: run tests
           command: . TestCycle.sh
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - builder
