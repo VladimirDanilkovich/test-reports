@@ -69,5 +69,5 @@ workflows:
   nightly:
     triggers:
           cron: "0 0 * * *"
-  jobs:
+    jobs:
       - bilder
