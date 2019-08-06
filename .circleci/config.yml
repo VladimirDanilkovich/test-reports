@@ -65,9 +65,6 @@ jobs:
 
 workflows:
   version: 2
-  commit:
-    jobs:
-      - bilder
   nightly:
     triggers:
       - schedule:
