@@ -15,6 +15,7 @@ describe('Once of', function() {
   })
   it('Once of', async function() {
     await driver.get("https://dev-beyondblue.cs58.force.com/donate")
+    await driver.sleep(2000)
     await driver.findElement(By.xpath("/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[3]/div[1]/div[1]/div[3]/lightning-input[1]/div[1]/input[1]")).sendKeys("4")
     await driver.findElement(By.xpath("//button[@class=\'slds-button slds-button_neutral slds-float_right btn-process test\']")).click()
     await driver.findElement(By.xpath("/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/label[1]/div[1]/div[1]/div[1]/select[1]")).click()
