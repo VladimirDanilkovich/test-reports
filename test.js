@@ -33,7 +33,7 @@ describe('Test_1', function() {
     }
     await driver.findElement(By.xpath("//textarea")).click()
     await driver.findElement(By.xpath("//textarea")).sendKeys("Test")
-    await driver.findElement(By.cs(".donate-now")).click()
+    await driver.findElement(By.css(".donate-now")).click()
     await driver.sleep(undefined)
     {
       const elements = await driver.findElements(By.css(".toast-error"))
